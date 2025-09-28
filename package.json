@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/VeronikaSmahula/pm_23_22#readme",
   "devDependencies": {
-    "gulp": "^5.0.1"
+    "browser-sync": "^2.29.3",
+    "gulp": "^5.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.93.2"
   }
 }
