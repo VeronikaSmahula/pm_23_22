@@ -1,1 +1,1 @@
-console.log("JS працює ✅");
+console.log("JS працює1 ✅");
