@@ -3,44 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Kevin C. Silva</title>
+  <title>Kevin C. Silva — CV</title>
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .name {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .photo img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .section-title {
+      border-bottom: 2px solid #dc3545;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      color: #dc3545;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    .progress {
+      height: 6px;
+      background-color: #e9ecef;
+    }
+    .progress-bar {
+      background-color: #dc3545;
+    }
+    .skill-name {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+  </style>
 </head>
-<body class="bg-light">
-  <div class="container py-5">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+<body>
+  <div class="container bg-white shadow-sm mt-4 mb-4 p-4 rounded">
     <div class="row">
-      <div class="col-md-4 bg-white p-4 rounded shadow-sm">
-        <h2 class="text-uppercase fw-bold">Kevin C. Silva</h2>
-        <p class="text-muted">Graphic & Web Designer</p>
+      <!-- Ліва колонка -->
+      <div class="col-md-8">
+        <h2 class="name text-uppercase">Kevin C. <span class="text-muted">Silva</span></h2>
+        <p class="text-secondary">Graphic & Web Designer</p>
 
-        <h5 class="mt-4 text-danger">About Me</h5>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <div class="d-flex align-items-center mb-3">
+          <div><i class="bi bi-geo-alt-fill text-danger me-2"></i> 769 Prudence Street, Lincoln Park, MI 48146</div>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="me-4"><i class="bi bi-telephone-fill text-danger me-2"></i> +1-718-310-5518</div>
+          <div><i class="bi bi-envelope-fill text-danger me-2"></i> www.yourwebsite.com</div>
+        </div>
 
-        <h5 class="mt-4 text-danger">Education</h5>
-        <ul class="list-unstyled">
-          <li><b>Stanford University</b> (2011–2013)<br>Master Degree Graduate</li>
-          <li><b>Chicago University</b> (2007–2009)<br>Bachelor Degree</li>
+        <h5 class="section-title">About Me</h5>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <b>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</b></p>
+
+        <h5 class="section-title mt-4">Education</h5>
+        <p><b>Stanford University</b> (2011–2013)<br>Master Degree Graduate</p>
+        <p><b>Chicago University</b> (2007–2010)<br>Bachelor Degree</p>
+
+        <h5 class="section-title mt-4">Job Experience</h5>
+        <p><b>Creative Agency</b> (2020–Present)<br>Senior Web Designer</p>
+        <p><b>Creative Market</b> (2015–2020)<br>Graphic Designer</p>
+        <p><b>Marketing Agency</b> (2013–2015)<br>Marketing Manager</p>
+
+        <h5 class="section-title mt-4">Hobbies</h5>
+        <ul>
+          <li>Book Reading</li>
+          <li>Traveling</li>
+          <li>Playing Chess</li>
+          <li>Graphic Design</li>
         </ul>
       </div>
 
-      <div class="col-md-8 bg-white p-4 rounded shadow-sm">
-        <h5 class="text-danger">Job Experience</h5>
-        <ul class="list-unstyled">
-          <li><b>Creative Agency</b> (2020–Present) – Senior Web Designer</li>
-          <li><b>Creative Market</b> – Graphic Designer</li>
-          <li><b>Marketing Agency</b> – Manager</li>
-        </ul>
+      <!-- Права колонка -->
+      <div class="col-md-4 text-center">
+        <div class="photo mb-3">
+          <img src="img/photo.jpg" alt="Photo">
+        </div>
 
-        <h5 class="text-danger">Skills</h5>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-danger" style="width: 95%">Adobe Photoshop</div>
-        </div>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-danger" style="width: 60%">Illustrator</div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar bg-danger" style="width: 45%">HTML/CSS</div>
-        </div>
+        <h5 class="section-title">References</h5>
+        <p><b>Darwin B. Magana</b><br>2819 Shobe Lane, Manacos, CO<br><span class="text-danger">+1-970-333-1393</span><br>www.yourwebsite.com</p>
+        <p><b>Robert J. Belvin</b><br>2119 Fairfax Drive, Newark, NJ<br><span class="text-danger">+1-908-987-5033</span><br>www.yourwebsite.com</p>
+
+        <h5 class="section-title">Skills</h5>
+        <div class="skill-name">Adobe Photoshop</div>
+        <div class="progress mb-2"><div class="progress-bar" style="width: 95%"></div></div>
+        <div class="skill-name">Adobe Illustrator</div>
+        <div class="progress mb-2"><div class="progress-bar" style="width: 80%"></div></div>
+        <div class="skill-name">Microsoft Word</div>
+        <div class="progress mb-2"><div class="progress-bar" style="width: 75%"></div></div>
+        <div class="skill-name">HTML/CSS</div>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 65%"></div></div>
+
+        <h5 class="section-title mt-4">Languages</h5>
+        <p>English – <b>95%</b><br>German – <b>60%</b><br>Spanish – <b>45%</b></p>
       </div>
     </div>
   </div>
