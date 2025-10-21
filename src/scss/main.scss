@@ -1,24 +1,29 @@
 body {
-  background-color: #f8f9fa;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f3f3;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-aside {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.resume {
+  max-width: 900px;
 }
 
-main {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
 }
 
-h2, h4, h5 {
-  color: #2c3e50;
+.section-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
-ul li {
-  padding: 3px 0;
+.circle {
+  width: 60px;
+  height: 60px;
+  line-height: 54px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
 }
+
