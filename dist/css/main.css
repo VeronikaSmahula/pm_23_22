@@ -1,6 +1,24 @@
 body {
-  background: rgb(91, 2, 2);
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
 }
-body h1 {
-  color: rgb(177, 177, 32);
+
+aside {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h4, h5 {
+  color: #2c3e50;
+}
+
+ul li {
+  padding: 3px 0;
 }

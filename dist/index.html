@@ -2,109 +2,69 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kevin C. Silva — CV</title>
-  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .name {
-      font-weight: 700;
-      font-size: 1.8rem;
-    }
-    .photo img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .section-title {
-      border-bottom: 2px solid #dc3545;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
-      color: #dc3545;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 1rem;
-    }
-    .progress {
-      height: 6px;
-      background-color: #e9ecef;
-    }
-    .progress-bar {
-      background-color: #dc3545;
-    }
-    .skill-name {
-      font-size: 0.9rem;
-      margin-bottom: 4px;
-    }
-  </style>
-</head>
-<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <title>Kevin Silva Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Власні стилі -->
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
 <body>
-  <div class="container bg-white shadow-sm mt-4 mb-4 p-4 rounded">
+  <div class="container my-5">
     <div class="row">
       <!-- Ліва колонка -->
-      <div class="col-md-8">
-        <h2 class="name text-uppercase">Kevin C. <span class="text-muted">Silva</span></h2>
-        <p class="text-secondary">Graphic & Web Designer</p>
+      <aside class="col-md-4 bg-light p-4 rounded shadow-sm text-center">
+        <img src="images/photo.jpg" alt="Profile Photo" class="img-fluid rounded-circle mb-3" width="150">
+        <h2 class="fw-bold text-primary">KEVIN C. SILVA</h2>
+        <p class="text-muted">Graphic & Web Designer</p>
 
-        <div class="d-flex align-items-center mb-3">
-          <div><i class="bi bi-geo-alt-fill text-danger me-2"></i> 769 Prudence Street, Lincoln Park, MI 48146</div>
-        </div>
-        <div class="d-flex mb-3">
-          <div class="me-4"><i class="bi bi-telephone-fill text-danger me-2"></i> +1-718-310-5518</div>
-          <div><i class="bi bi-envelope-fill text-danger me-2"></i> www.yourwebsite.com</div>
-        </div>
+        <hr>
+        <h5 class="text-uppercase fw-bold mt-4">About Me</h5>
+        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed sapien a nunc blandit mattis.</p>
 
-        <h5 class="section-title">About Me</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <b>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</b></p>
-
-        <h5 class="section-title mt-4">Education</h5>
-        <p><b>Stanford University</b> (2011–2013)<br>Master Degree Graduate</p>
-        <p><b>Chicago University</b> (2007–2010)<br>Bachelor Degree</p>
-
-        <h5 class="section-title mt-4">Job Experience</h5>
-        <p><b>Creative Agency</b> (2020–Present)<br>Senior Web Designer</p>
-        <p><b>Creative Market</b> (2015–2020)<br>Graphic Designer</p>
-        <p><b>Marketing Agency</b> (2013–2015)<br>Marketing Manager</p>
-
-        <h5 class="section-title mt-4">Hobbies</h5>
-        <ul>
-          <li>Book Reading</li>
-          <li>Traveling</li>
-          <li>Playing Chess</li>
-          <li>Graphic Design</li>
+        <h5 class="text-uppercase fw-bold mt-4">Skills</h5>
+        <ul class="list-unstyled small">
+          <li>Adobe Photoshop</li>
+          <li>Illustrator</li>
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
         </ul>
-      </div>
+      </aside>
 
       <!-- Права колонка -->
-      <div class="col-md-4 text-center">
-        <div class="photo mb-3">
-          <img src="img/photo.jpg" alt="Photo">
-        </div>
+      <main class="col-md-8 p-4">
+        <section class="mb-4">
+          <h4 class="fw-bold border-bottom pb-2 text-uppercase">Education</h4>
+          <div class="mb-3">
+            <h6 class="fw-bold">Stanford University <span class="text-muted">(2013–2015)</span></h6>
+            <p class="mb-0 small">Master Degree in Graphic Design</p>
+          </div>
+          <div>
+            <h6 class="fw-bold">Chicago University <span class="text-muted">(2007–2011)</span></h6>
+            <p class="mb-0 small">Bachelor Degree in Computer Science</p>
+          </div>
+        </section>
 
-        <h5 class="section-title">References</h5>
-        <p><b>Darwin B. Magana</b><br>2819 Shobe Lane, Manacos, CO<br><span class="text-danger">+1-970-333-1393</span><br>www.yourwebsite.com</p>
-        <p><b>Robert J. Belvin</b><br>2119 Fairfax Drive, Newark, NJ<br><span class="text-danger">+1-908-987-5033</span><br>www.yourwebsite.com</p>
-
-        <h5 class="section-title">Skills</h5>
-        <div class="skill-name">Adobe Photoshop</div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 95%"></div></div>
-        <div class="skill-name">Adobe Illustrator</div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 80%"></div></div>
-        <div class="skill-name">Microsoft Word</div>
-        <div class="progress mb-2"><div class="progress-bar" style="width: 75%"></div></div>
-        <div class="skill-name">HTML/CSS</div>
-        <div class="progress mb-3"><div class="progress-bar" style="width: 65%"></div></div>
-
-        <h5 class="section-title mt-4">Languages</h5>
-        <p>English – <b>95%</b><br>German – <b>60%</b><br>Spanish – <b>45%</b></p>
-      </div>
+        <section>
+          <h4 class="fw-bold border-bottom pb-2 text-uppercase">Job Experience</h4>
+          <div class="mb-3">
+            <h6 class="fw-bold">Creative Agency <span class="text-muted">(2020–Present)</span></h6>
+            <p class="mb-0 small">Senior Web Designer</p>
+          </div>
+          <div>
+            <h6 class="fw-bold">Marketing Agency <span class="text-muted">(2016–2019)</span></h6>
+            <p class="mb-0 small">Graphic Designer</p>
+          </div>
+        </section>
+      </main>
     </div>
   </div>
 
-  <script src="dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
