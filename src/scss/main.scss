@@ -1,29 +1,168 @@
+/* ===== RESUME TEMPLATE STYLING ===== */
+
 body {
-  background-color: #f3f3f3;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .resume {
   max-width: 900px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-}
-
-.section-title {
-  font-size: 1rem;
+/* HEADER */
+h1 {
+  font-size: 2.2rem;
   letter-spacing: 1px;
 }
 
+h1 span,
+h1 strong {
+  color: #000;
+}
+
+.text-muted {
+  color: #777 !important;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* ICONS */
+.bi {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  color: #dc3545;
+}
+
+/* SECTIONS */
+.section-title {
+  font-size: 1.1rem;
+  color: #000;
+  border-color: #dc3545 !important;
+}
+
+section p,
+section small {
+  color: #555;
+}
+
+hr {
+  opacity: 0.8;
+}
+
+/* EDUCATION / JOB ITEMS */
+.edu-item,
+.job-item {
+  margin-bottom: 0.8rem;
+}
+
+.edu-item h6,
+.job-item h6 {
+  font-size: 0.95rem;
+}
+
+.edu-item p,
+.job-item p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* REFERENCES */
+.ref-item h6 {
+  font-size: 0.9rem;
+}
+.ref-item small {
+  font-size: 0.8rem;
+}
+
+/* PROGRESS BARS */
+.progress {
+  height: 6px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+.progress-bar {
+  background-color: #dc3545 !important;
+  border-radius: 4px;
+}
+
+/* LANGUAGES */
 .circle {
   width: 60px;
   height: 60px;
-  line-height: 54px;
-  text-align: center;
-  font-weight: bold;
+  line-height: 60px;
   border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  color: #dc3545;
 }
+
+/* HOBBIES */
+ul.list-unstyled li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+
+ul.list-unstyled li::before {
+  content: "•";
+  color: #dc3545;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* LAYOUT ADJUSTMENTS */
+@media (max-width: 767px) {
+  .resume {
+    padding: 2rem 1.5rem !important;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8rem;
+  }
+}
+
+/* SHADOWS, DETAILS */
+.border-danger {
+  border-color: #dc3545 !important;
+}
+
+.border-dark {
+  border-color: #000 !important;
+}
+
+.border-secondary {
+  border-color: #ccc !important;
+}
+
+.rounded-4 {
+  border-radius: 20px !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
 
