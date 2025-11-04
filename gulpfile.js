@@ -39,7 +39,7 @@ gulp.task("scripts", function () {
 
 // 🔹 Копіювання зображень
 gulp.task("images", function () {
-  return gulp.src(paths.images)
+  return gulp.src(paths.images, {encoding: false})
     .pipe(gulp.dest("dist/images"))
     .pipe(browserSync.stream());
 });
